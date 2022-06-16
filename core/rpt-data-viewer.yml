@@ -11,8 +11,6 @@ spec:
   extended-settings:
     service:
       enabled: true
-    envVariables:
-      JAVA_TOOL_OPTIONS: "-XX:+ExitOnOutOfMemoryError"
     resources:
       limits:
         memory: 200Mi
