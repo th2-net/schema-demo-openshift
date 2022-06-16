@@ -4,7 +4,7 @@ metadata:
   name: sim-demo
 spec:
   image-name: ghcr.io/th2-net/th2-sim-template
-  image-version: stub
+  image-version: 3.4.0-th2-1350-1425411017
   type: th2-sim
   custom-config:
     defaultRules:
@@ -76,7 +76,7 @@ spec:
         - dc-demo-server2
   extended-settings:
     externalBox:
-      enabled: true
+      enabled: false
     service:
       enabled: false
     envVariables:
