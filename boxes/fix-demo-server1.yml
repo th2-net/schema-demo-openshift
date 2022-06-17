@@ -74,6 +74,7 @@ spec:
               expected-value: fix-demo-server1
               operation: EQUAL
   extended-settings:
+    hostNetwork: true
     service:
       enabled: true
     envVariables:
