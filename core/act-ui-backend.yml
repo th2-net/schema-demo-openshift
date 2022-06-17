@@ -11,9 +11,9 @@ spec:
     hostname: localhost
     port: 8080
     ioDispatcherThreadPoolSize: 1
-    schemaDefinitionLink: http://th2-kube-demo:30000/editor/backend/schema/hand
-    schemaDescriptorsLink: http://th2-kube-demo:30000/editor/backend/descriptor/hand
-    namespace: th2-kube-demo
+    schemaDefinitionLink: http://infra-mgr.service:8080/schema/hand
+    schemaDescriptorsLink: http://infra-mgr.service:8080/descriptor/hand
+    namespace: th2-demo
     actTypes: [th2-act]
 
   pins:
