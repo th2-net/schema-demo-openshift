@@ -9,11 +9,11 @@ spec:
     dictionary:
       name: fix50-generic
       type: MAIN
-  - name: codec-fix-demo-dictionary
-    box: codec-fix-demo
-    dictionary:
-      name: fix50-generic
-      type: MAIN
+#   - name: codec-fix-demo-dictionary
+#     box: codec-fix-demo
+#     dictionary:
+#       name: fix50-generic
+#       type: MAIN
   - name: demo-conn1-dictionary
     box: demo-conn1
     dictionary:
@@ -94,13 +94,13 @@ spec:
       to:
         box: check1
         pin: from_codec
-    - name: codec-fix-demo-to-check1
-      from:
-        box: codec-fix-demo
-        pin: out_codec_decode
-      to:
-        box: check1
-        pin: from_codec
+#     - name: codec-fix-demo-to-check1
+#       from:
+#         box: codec-fix-demo
+#         pin: out_codec_decode
+#       to:
+#         box: check1
+#         pin: from_codec
     - name: codec-fix-to-recon
       from:
         box: codec-fix
