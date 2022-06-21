@@ -68,7 +68,6 @@ spec:
     - send
     - raw
     - subscribe
-    - test
     filters:
     - metadata:
       - field-name: session_alias
