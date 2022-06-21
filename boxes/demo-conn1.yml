@@ -64,31 +64,32 @@ spec:
       socketConnectPort: 8080
       useDefaultApplVerID: true
   pins:
-    - name: in_raw
-      connection-type: mq
-      attributes:
-        - first
-        - raw
-        - publish
-        - store
-    - name: out_raw
-      connection-type: mq
-      attributes:
-        - second
-        - raw
-        - publish
-        - store
-    - name: fix_to_send
-      connection-type: mq
-      attributes:
-        - send
-        - raw
-        - subscribe
-      filters:
-        - metadata:
-            - field-name: session_alias
-              expected-value: demo-conn1
-              operation: EQUAL
+  - name: in_raw
+    connection-type: mq
+    attributes:
+    - first
+    - raw
+    - publish
+    - store
+  - name: out_raw
+    connection-type: mq
+    attributes:
+    - second
+    - raw
+    - publish
+    - store
+  - name: fix_to_send
+    connection-type: mq
+    attributes:
+    - send
+    - raw
+    - subscribe
+    - test
+    filters:
+    - metadata:
+      - field-name: session_alias
+        expected-value: demo-conn1
+        operation: EQUAL
   extended-settings:
     service:
       enabled: true
