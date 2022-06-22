@@ -33,7 +33,7 @@ spec:
       endpoints:
         - name: 'grpc'
           targetPort: 8080
-          nodePort: 31357
+          nodePort: 31257
     envVariables:
       JAVA_TOOL_OPTIONS: '-XX:+UseContainerSupport -XX:MaxRAMPercentage=90'
     resources:

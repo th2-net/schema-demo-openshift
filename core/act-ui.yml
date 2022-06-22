@@ -13,7 +13,7 @@ spec:
       endpoints:
         - name: 'other'
           targetPort: 80
-          nodePort: 31356
+          nodePort: 31256
     envVariables:
       JAVA_TOOL_OPTIONS: "-XX:+ExitOnOutOfMemoryError"
     resources:
