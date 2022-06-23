@@ -4,7 +4,7 @@ metadata:
   name: act-fix
 spec:
   image-name: ghcr.io/th2-net/th2-act-template-j
-  image-version: 3.5.0
+  image-version: 3.6.0
   type: th2-act
   pins:
   - name: server
@@ -29,11 +29,11 @@ spec:
   extended-settings:
     service:
       enabled: true
-      type: LoadBalancer
+      type: NodePort
       endpoints:
       - name: grpc
         targetPort: 8080
-        nodePort: 31278
+        nodePort: 31178
     envVariables:
       JAVA_TOOL_OPTIONS: -XX:+ExitOnOutOfMemoryError
     resources:
