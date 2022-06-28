@@ -76,7 +76,7 @@ spec:
         - dc-demo-server2
   extended-settings:
     externalBox:
-      enabled: false
+      enabled: true
     service:
       enabled: false
     envVariables:
