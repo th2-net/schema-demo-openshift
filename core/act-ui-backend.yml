@@ -4,7 +4,7 @@ metadata:
   name: act-ui-backend
 spec:
   image-name: ghcr.io/th2-net/th2-act-ui-backend
-  image-version: 0.3.0
+  image-version: 1.0.7
   type: th2-rpt-data-provider
   custom-config:
     responseTimeout: 60000
@@ -13,7 +13,7 @@ spec:
     ioDispatcherThreadPoolSize: 1
     schemaDefinitionLink: http://infra-mgr.service:8080/schema/demo
     schemaDescriptorsLink: http://infra-mgr.service:8080/descriptor/demo
-    namespace: th2-demo
+    namespace: th2-demo-2
     actTypes: [th2-act]
 
   pins:
@@ -29,11 +29,10 @@ spec:
   extended-settings:
     service:
       enabled: false
-      type: NodePort
+      type: ClusterIP
       endpoints:
         - name: 'grpc'
           targetPort: 8080
-          nodePort: 31357
     envVariables:
       JAVA_TOOL_OPTIONS: '-XX:+UseContainerSupport -XX:MaxRAMPercentage=90'
     resources:
