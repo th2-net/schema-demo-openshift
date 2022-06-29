@@ -4,7 +4,7 @@ metadata:
   name: act-ui
 spec:
   image-name: ghcr.io/th2-net/th2-act-ui
-  image-version: 1.0.17
+  image-version: 1.1.42
   type: th2-rpt-viewer
   extended-settings:
     service:
@@ -18,8 +18,8 @@ spec:
       JAVA_TOOL_OPTIONS: "-XX:+ExitOnOutOfMemoryError"
     resources:
       limits:
-        memory: 300Mi
-        cpu: 210m
+        memory: 100Mi
+        cpu: 20m
       requests:
         memory: 100Mi
         cpu: 20m
