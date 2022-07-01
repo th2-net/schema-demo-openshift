@@ -11,8 +11,8 @@ spec:
     hostname: localhost
     port: 8080
     ioDispatcherThreadPoolSize: 1
-    schemaDefinitionLink: http://infra-mgr.service:8080/schema/demo
-    schemaDescriptorsLink: http://infra-mgr.service:8080/descriptor/demo
+    schemaDefinitionLink: http://infra-mgr.service:8080/schema/demo-2
+    schemaDescriptorsLink: http://infra-mgr.service:8080/descriptor/demo-2
     namespace: th2-demo-2
     actTypes: [th2-act]
 
