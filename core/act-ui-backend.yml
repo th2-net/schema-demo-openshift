@@ -28,11 +28,14 @@ spec:
         - publish
   extended-settings:
     service:
-      enabled: false
+      enabled: true
       type: ClusterIP
       endpoints:
         - name: 'grpc'
           targetPort: 8080
+      ingress:
+        urlPaths:
+          - /act-ui/backend/
     envVariables:
       JAVA_TOOL_OPTIONS: '-XX:+UseContainerSupport -XX:MaxRAMPercentage=90'
     resources:
