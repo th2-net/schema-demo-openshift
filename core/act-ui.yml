@@ -9,10 +9,10 @@ spec:
   extended-settings:
     service:
       enabled: true
-      type: NodePort
+      type: ClusterIP
       endpoints:
         - name: 'other'
-          targetPort: 80
+          targetPort: 8080
           nodePort: 31356
       ingress:
         urlPaths:
