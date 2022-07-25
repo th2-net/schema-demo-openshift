@@ -33,7 +33,6 @@ spec:
       endpoints:
       - name: grpc
         targetPort: 8080
-        nodePort: 31278
     envVariables:
       JAVA_TOOL_OPTIONS: -XX:+ExitOnOutOfMemoryError
     resources:
