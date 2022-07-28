@@ -7,6 +7,7 @@ spec:
   image-name: ghcr.io/th2-net/th2-check2-recon-template
   image-version: 3.3.1.dev1059626422
   type: th2-check2-recon
+  disabled: true
   custom-config:
     recon_name: Demo_Recon
     cache_size: 500
