@@ -6,6 +6,7 @@ spec:
   image-name: ghcr.io/th2-net/th2-read-csv
   image-version: stub
   type: th2-read
+  disabled: true
   custom-config:
     sourceDirectory: "${user.home}/demo_outputs/"
     aliases:
