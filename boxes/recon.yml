@@ -5,7 +5,7 @@ metadata:
 spec:
   # TO DO
   image-name: ghcr.io/th2-net/th2-check2-recon-template
-  image-version: 3.1.1
+  image-version: 3.3.1.dev2755205739
   type: th2-check2-recon
   disabled: false
   custom-config:
