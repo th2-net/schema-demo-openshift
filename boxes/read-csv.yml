@@ -30,8 +30,8 @@ spec:
         - publish
         - store
   extended-settings:
-#    externalBox:
-#      enabled: true
+    externalBox:
+      enabled: true
     service:
       enabled: false
     envVariables:
