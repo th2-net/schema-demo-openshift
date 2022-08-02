@@ -2,8 +2,6 @@ apiVersion: th2.exactpro.com/v1
 kind: Th2Box
 metadata:
   name: util
-  annotations:
-    test: my-annotation
 spec:
   image-name: ghcr.io/th2-net/th2-util
   image-version: 3.1.0
