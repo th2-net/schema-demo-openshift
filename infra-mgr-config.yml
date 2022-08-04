@@ -11,7 +11,7 @@ spec:
       connectionTimeout: "-1"
       connectionCloseTimeout: "10000"
       maxRecoveryAttempts: "5"
-      minConnectionRecoveryTimeout: "10000"
+      minConnectionRecoveryTimeout: "10001"
       maxConnectionRecoveryTimeout: "60000"
       prefetchCount: "100"
     grpcRouter:
