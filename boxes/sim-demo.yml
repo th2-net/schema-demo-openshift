@@ -76,9 +76,9 @@ spec:
         - dc-demo-server2
   extended-settings:
     externalBox:
-      enabled: true
-    service:
       enabled: false
+    service:
+      enabled: true
     envVariables:
       JAVA_TOOL_OPTIONS: "-XX:+ExitOnOutOfMemoryError"
     resources:
